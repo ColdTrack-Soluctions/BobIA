@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BobIA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="SHORTCUT ICON" href="logo.svg">
+</head>
+
+<body>
+    <div class="header">
+        <div class="imagem1">
+            <img src="logo.svg" class="imagemfixa">
+        </div>
+    </div>
+    <div class="tudo">
+        <div style="margin-top: 3rem; margin-bottom: 3rem;">
+            <input type="text" id="pergunta" placeholder="Pergunte Aqui para nossa IA">
+            <button onclick="gerarResposta()">🔎</button>
+        </div>
+        <div id="resposta"></div>
+    </div>
+
+    <script>
+
+        async function gerarResposta() {
+            const pergunta = document.getElementById('pergunta').value;
+
+            const response = await fetch('/perguntar', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ pergunta })
+            });
+
+            const data = await response.json();
+
+            resposta.style.display = 'block';
+            document.getElementById('resposta').innerText = data.resultado;
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(267deg, rgba(51, 159, 217, 1) 0%, rgba(4, 1, 137, 1) 50%, rgba(2, 1, 59, 1) 84%);
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.container {
+    background: rgb(51, 159, 217);
+    background: linear-gradient(267deg, rgba(51, 159, 217, 1) 0%, rgba(4, 1, 137, 1) 50%, rgba(2, 1, 59, 1) 84%);
+    height: 100vh;
+    border-bottom: #040189 40px solid;
+    width: 100vw;
+}
+
+.header {
+    width: 100%;
+    background-color: #364DAA;
+    color: white;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.imagem1 {
+    display: flex;
+    align-items: center;
+    margin-top: 17px;
+}
+
+.imagemfixa {
+    height: 230px;
+    width: 230px;
+}
+
+.tudo{
+    height: 85vh;
+    width: 99.7vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    background-color: transparent;
+    border: 3px solid #00ffff;
+    border-radius: 30px;
+    height: 5rem;
+    width: 30vw;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba(0, 0, 0, 0.452);
+}
+
+button{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    border: 2px white dashed;
+    background-color: #040189;
+    font-size: 30px;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+}
+button:hover{
+    border: 2px white solid;
+}
+
+#resposta{
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    width: 30vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+
+}
